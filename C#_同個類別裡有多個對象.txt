@@ -1,0 +1,24 @@
+using System;
+
+namespace MyApplication
+{
+  class Car
+  {
+    string color_1 = "red";
+    string color_2 = "blue";
+    string color_3 = "pink";
+    string color_4 = "orange";
+
+    static void Main(string[] args)
+    {
+      Car myObj_1 = new Car();
+      Car myObj_2 = new Car();
+      Car myObj_3 = new Car();
+      Car myObj_4 = new Car();
+      Console.WriteLine(myObj_1.color_1);
+      Console.WriteLine(myObj_2.color_2);
+      Console.WriteLine(myObj_3.color_3);
+      Console.WriteLine(myObj_4.color_4);
+    }
+  }
+}

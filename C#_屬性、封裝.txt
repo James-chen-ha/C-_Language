@@ -1,0 +1,40 @@
+屬性和封裝
+在我們開始解釋屬性之前，您應該對“封裝”有一個基本的了解。
+
+Encapsulation的含義是確保“敏感”數據對用戶隱藏。要實現這一目標，您必須：
+
+將字段/變量聲明為 private
+通過屬性提供public get 和set方法來訪問和更新 字段的值private
+
+#######################################################################################
+
+using System;
+
+namespace MyApplication
+{ 
+  class Person
+  {
+    private string name;  // field
+    public string Name    // property
+    {
+      get { return name; }
+      set { name = value; }
+    }  
+  }
+   
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Person myObj = new Person();
+      myObj.Name = "FUCKK";               //現在我們可以使用該Name屬性來訪問和更新類的private字段Person：
+      Console.WriteLine(myObj.Name);
+    }
+  }
+}
+
+為什麼要封裝？
+更好地控制班級成員（減少自己（或其他人）弄亂代碼的可能性）
+字段可以設置為只讀（如果您只使用該get方法）或只寫（如果您只使用該set方法）
+靈活：程序員可以改變一部分代碼而不影響其他部分
+提高數據安全性

@@ -1,0 +1,21 @@
+using System;
+
+namespace MyApplication
+{
+  class Car 
+  {
+    public string color_1 = "red";
+    public string color_2 = "blue";
+  }
+  
+  class Program
+  {
+    static void Main(string[] args)
+  {
+    Car myObj_1 = new Car();
+    Car myObj_2 = new Car();
+    Console.WriteLine(myObj_1.color_1);
+    Console.WriteLine(myObj_2.color_2);
+  }
+  }
+}

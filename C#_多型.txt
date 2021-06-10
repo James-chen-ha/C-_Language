@@ -1,0 +1,42 @@
+using System;
+
+namespace MyApplication
+{
+  class Animal  // Base class (parent) Father
+  {
+    public virtual void animalSound()
+    {
+      Console.WriteLine("The animal makes a FUCKING sound");
+    }
+  }
+
+  class Pig : Animal  // Derived class (child) //派生類別(子類別)
+  {
+    public override void animalSound()  //override為覆寫
+    {
+      Console.WriteLine("The pig says: FUCK ME BABAY!!!");
+    }
+  }
+
+  class Dog : Animal  // Derived class (child) //派生類別(子類別)
+  {
+    public override void animalSound() //override為覆寫
+    {
+      Console.WriteLine("The dog says: SUCK MY DICK!!");
+    }
+  }
+
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Animal myAnimal = new Animal();  // Create a Animal object
+      Animal myPig = new Pig();  // Create a Pig object
+      Animal myDog = new Dog();  // Create a Dog object
+      
+      myAnimal.animalSound();
+      myPig.animalSound();
+      myDog.animalSound();
+    }
+  }
+}

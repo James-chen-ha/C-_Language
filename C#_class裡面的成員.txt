@@ -1,0 +1,56 @@
+using System;
+
+namespace MyApplication
+{
+  class Car 
+  {
+    string color;
+    int maxSpeed;
+
+    static void Main(string[] args)
+    {
+      Car myObject = new Car();//new代表實例化
+      myObject.color = "red";
+      myObject.maxSpeed = 200;
+      Console.WriteLine(myObject.color);
+      Console.WriteLine(myObject.maxSpeed);
+    }
+  }
+}
+
+
+
+
+
+
+using System;
+
+namespace MyApplication
+{
+  class Car 
+  {
+    string model;
+    string color;
+    int year;
+
+    static void Main(string[] args)
+    {
+      Car Ford = new Car();
+      Ford.model = "Mustang";
+      Ford.color = "red";
+      Ford.year = 1969;
+
+      Car Opel = new Car();
+      Opel.model = "Astra";
+      Opel.color = "white";
+      Opel.year = 2005;
+
+      Console.WriteLine(Ford.model);
+      Console.WriteLine(Opel.model);
+      Console.WriteLine(Ford.color);
+      Console.WriteLine(Opel.color);
+      Console.WriteLine(Ford.year);
+      Console.WriteLine(Opel.year);
+    }
+  }
+}
