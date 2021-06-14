@@ -1,0 +1,25 @@
+using System;
+using static System.Console;
+//using System.Collections.Generic;
+//using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace IfElse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("請輸入分數:");
+            int grade = int.Parse(Console.ReadLine());//將輸入數值轉為int型別
+            if (grade >= 60)
+            {
+                Console.WriteLine("PASS!");
+            }
+            else
+                Console.WriteLine("KEEP GOING!");
+            ReadLine();
+            
+        }
+    }
+}

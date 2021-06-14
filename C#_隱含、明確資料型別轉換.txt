@@ -1,0 +1,27 @@
+////////////////隱含資料型別轉換
+using System;
+using System.Collections.Generic;
+using static System.Console;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace datatype_conversion
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //num1自動轉換為float
+            int num1 = 125;
+            float num2 = 47.58F;
+            float result = num1 + num2;
+            WriteLine($"{num1}+{num2} = {result}");
+            ReadKey();
+        }
+    }
+}
+
+////////////////明確資料型別轉換
+parse方法
+convert類別

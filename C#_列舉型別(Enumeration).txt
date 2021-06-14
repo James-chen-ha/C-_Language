@@ -1,0 +1,32 @@
+using System;
+using static System.Console;
+//using System.Collections.Generic;
+//using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace dataStructer
+{
+    //宣告列舉型別常數值
+    enum City : short
+    {
+        Taipei = 100,
+        Taichung = 550
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            City zone1, zone2;//宣告列舉變數
+            short pt1, pt2;
+
+            zone1 = City.Taipei;//使用".(dot)"存取列舉成員
+            zone2 = City.Taichung;
+
+            pt1 = (short)City.Taipei;//輸出常數值並指定型別轉換
+            pt2 = (short)City.Taichung;
+            WriteLine($"城市:{zone1}, {zone2}");
+            WriteLine($"台北、台中郵遞區號:{pt1}, {pt2}");//$表示字串插值
+            ReadLine();//防止太快消失，畫面暫停
+        }
+    }
+}

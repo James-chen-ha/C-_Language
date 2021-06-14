@@ -1,0 +1,31 @@
+using System;
+using static System.Console;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace structerdata
+{
+    struct Computer
+    {
+        public int price;//資料型別 成員名稱1
+        public string serial;
+        public DateTime madeDate;
+    }
+    class structer
+    {
+        static void Main(string[] args)
+        {
+            Computer personPC;   //產生結構變數
+            personPC.price = 23750; //存取結構成員
+            personPC.madeDate = DateTime.Today;
+            personPC.serial = "ZCT-214686546B";
+
+            WriteLine($"電腦價格 {personPC.price:C}" +
+                      $"\n製造日期 {personPC.madeDate:D}" +
+                      $"\n序號 {personPC.serial}");
+            ReadLine();
+        }
+    }
+}
